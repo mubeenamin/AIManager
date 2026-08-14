@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ title, subtitle, onPressProfile 
         </View>
 
         <TouchableOpacity style={styles.roleBadge} onPress={onPressProfile}>
-          <UserCheck size={14} color={colors.emerald500 || colors.success} style={{ marginRight: 4 }} />
+          <UserCheck size={14} color={colors.success} style={{ marginRight: 4 }} />
           <Text style={styles.roleText}>{role}</Text>
         </TouchableOpacity>
       </View>

@@ -592,7 +592,7 @@ export const useBusinessDataStore = create<BusinessDataState>((set, get) => ({
       const lower = prompt.toLowerCase();
       let responseText = '';
       let chartData;
-      let metricsData;
+      let metricsData: Array<{ label: string; value: string; change?: string; trend?: 'up' | 'down' | 'neutral' }> | undefined;
 
       if (lower.includes('top') || lower.includes('best') || lower.includes('popular')) {
         responseText = 'Here are your top-performing products by revenue today:';

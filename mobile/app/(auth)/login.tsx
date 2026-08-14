@@ -24,13 +24,13 @@ export default function LoginScreen() {
     setLoading(true);
     await login(email, password);
     setLoading(false);
-    router.replace('/(main)/(tabs)');
+    router.replace('/(main)/(tabs)' as any);
   };
 
   const handleQuickDemo = (role: any) => {
     switchRole(role);
     login(`${role.toLowerCase()}@apexretail.com`);
-    router.replace('/(main)/(tabs)');
+    router.replace('/(main)/(tabs)' as any);
   };
 
   return (

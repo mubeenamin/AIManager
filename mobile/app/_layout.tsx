@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 export default function RootLayout() {
   return (
     <QueryClientProvider client={queryClient}>
-      <StatusBar style="light" backgroundColor={colors.cardBg} />
+      <StatusBar style="light" />
       <Stack
         screenOptions={{
           headerShown: false,
